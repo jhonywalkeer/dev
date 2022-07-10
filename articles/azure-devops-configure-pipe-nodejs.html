@@ -1,0 +1,79 @@
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="../assets/icons/jhony-walker.ico">
+  <link rel="stylesheet" href="../styles/styles-article-blog.css">
+  <title>Walker | Azure DevOps</title>
+</head>
+<body>
+  <section class="navigation">
+    <div class="nav-container">
+      <div class="brand">
+        <a href="../index.html"><img src="../assets/images/jhony.png" alt="Logomarca Jhony Walker"></a>
+      </div>
+      <nav>
+        <ul class="nav-list">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="#!">Sobre</a></li>
+          <li><a href="../blog.html">Blog</a></li>
+          <li><a href="#!">Cases</a></li>
+          <li><a href="#!">Podcast</a></li>
+          <li><a href="#!">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </section>
+  <div class="breadcrumb">
+    <!-- Breadcrumb item -->
+    <a>Home</a>
+    <!-- Separator -->
+    <div class="breadcrumb__separator">/</div>
+    Blog
+    <div class="breadcrumb__separator">/</div>
+    Azure DevOps Configurar pipelines de CI & CD para aplicativos Node.js
+    </div>
+  <!-- ______________________________ -->
+
+  <div class="content">
+    <h1>Azure DevOps - Configurar pipelines de CI / CD para aplicativos Node.js</h1>
+    <div class="author">Jhony Walker<div class="date">30 de OUT de 2021 | 1 min read</div></div>
+    <img src="https://images.unsplash.com/photo-1473186578172-c141e6798cf4" alt="a minimalist coffee">
+    <p> 
+      Use pipelines do Azure DevOps para criar e testar aplicativos Node.js e, em seguida, implantar ou publicar no serviço de aplicativo Azure. A seguir estão as etapas a serem realizadas para um fluxo de trabalho de CI / CD completo.
+      <br/> 
+      <br/> 1º) Desenvolva e comprometa seu código no branch de desenvolvimento.
+      <br/> 2º) Envie o código do branch de desenvolvimento para → branch de teste → branch master.
+      <br/> 3º) Implante seu código em ambientes diferentes Dev → Teste → Prod usando pipelines CI / CD no Azure DevOps.
+    </p>
+    <img src="../assets/images/azure-flow-1.png" alt="a minimalist coffee">
+    <h2>Crie um pipeline de build</h2>
+    <p>Acesse dev.azure.com/{organisation-name} → Selecione Projeto → Pipelines</p>
+    <ul class="list">
+      <li>Create New Pipeline → Use Azure Git Repos (YAML) para criar um pipeline como código ou <b>use the classic editor</b> para criar um pipeline a partir do designer visual. Para este tutorial, usaremos o editor clássico.</li>
+      <li>Select a source repo → Select Project Name → Select Repository → Select Branch Name → Click no Continue.</li>
+      <li>Selecione o modelo como um Trabalho vazio.</li>
+    </ul> 
+    <!-- <p>Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis 
+        est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, 
+        omnis voluptas assumenda est, omnis dolor repellendus.
+    </p>
+    <p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet 
+        ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, 
+        ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
+    </p> -->
+    <div class="bio">
+        <hr>
+        <div class="bio-info">
+            <img src="../assets/images/me.png" alt="">
+            <div class="bio-text">
+                <div class="author-bottom">Jhony Walker</div>
+                <div class="bio-details">Engenheiro de Software</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

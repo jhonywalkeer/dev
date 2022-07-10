@@ -1,0 +1,628 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "Nexa-Bold";
+  src: url("../fonts/Nexa-Bold.otf");
+}
+
+body,
+html {
+  padding: 0;
+  margin: 0;
+  font-family: "Nexa-Bold", sans-serif;
+  background-color: #000;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  /* background: transparent; */
+}
+
+/* HEADER */
+.navigation {
+  height: 70px;
+  background: #000;
+}
+
+.brand {
+  position: absolute;
+  padding-left: 20px;
+  float: left;
+  line-height: 70px;
+  text-transform: uppercase;
+  font-size: 1.4em;
+}
+.brand a,
+.brand a:visited {
+  color: #ffffff;
+  text-decoration: none;
+}
+.brand img {
+  width: 7%;
+  margin-top: 0.8%;
+}
+
+.nav-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  float: left;
+  position: relative;
+}
+nav ul li a,
+nav ul li a:visited {
+  display: block;
+  padding: 0 20px;
+  line-height: 70px;
+  background: #000;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+}
+nav ul li a:hover,
+nav ul li a:visited:hover {
+  background: #ed1c1c;
+  color: #ffffff;
+  height: 5%;
+}
+
+.page-main {
+  color: #ffffff;
+}
+
+.page-main div {
+  margin: 10% auto;
+  float: right;
+  max-width: 500px;
+  text-align: center;
+  align-items: center;
+}
+
+.phrase-design {
+  position: absolute;
+  width: 35%;
+  height: 30%;
+  left: 30%;
+  top: 8%;
+}
+
+.page-main h1 {
+  position: absolute;
+  width: 40%;
+  height: 60%;
+  left: 28%;
+  top: 20%;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 73px;
+  background: radial-gradient(
+    circle,
+    rgba(251, 195, 63, 1) 0%,
+    rgba(210, 0, 43, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.page-main h2 {
+  position: absolute;
+  width: 70%;
+  height: 50%;
+  left: 13%;
+  top: 28%;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 73px;
+  color: #ffffff;
+}
+
+.page-main p {
+  position: absolute;
+  width: 38%;
+  height: 80%;
+  left: 30%;
+  margin-top: 68px;
+  font-style: normal;
+  font-weight: 100;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  color: #999999;
+}
+
+.main-illustration {
+  position: absolute;
+  width: 90%;
+  height: 80%;
+  margin-left: 60px;
+  margin-top: 350px;
+}
+
+.me {
+  position: absolute;
+  max-width: 50%;
+  height: 171px;
+  left: 15%;
+  top: 145%;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 100px;
+  line-height: 171px;
+  background: linear-gradient(
+    180deg,
+    #ffffff 0%,
+    rgba(255, 255, 255, 0) 78.65%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  opacity: 0.2;
+}
+
+.about h1 {
+  position: absolute;
+  width: 314px;
+  height: 67px;
+  left: 20%;
+  top: 170%;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 67px;
+  color: #ffffff;
+}
+
+.about h2 {
+  position: absolute;
+  width: 314px;
+  height: 67px;
+  left: 37%;
+  top: 166.2%;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 55px;
+  line-height: 67px;
+  color: #ff0000;
+}
+
+.my-name {
+  position: absolute;
+  width: 118px;
+  height: 22px;
+  left: 20%;
+  top: 183%;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  color: #ffffff;
+}
+
+.my-description {
+  position: absolute;
+  width: 410px;
+  height: 66px;
+  left: 20%;
+  top: 189%;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 22px;
+  color: #999999;
+}
+
+.mej {
+  position: absolute;
+  width: 29%;
+  height: 70%;
+  left: 55%;
+  top: 172%;
+  border-radius: 20px;
+  z-index: 0;
+}
+
+.devback-node {
+  position: absolute;
+  width: 180px;
+  height: 38.11px;
+  left: 52%;
+  top: 202%;
+  z-index: 1;
+}
+
+.devback-nest {
+  position: absolute;
+  width: 180px;
+  height: 38.11px;
+  left: 52%;
+  top: 207%;
+  z-index: 1;
+}
+
+.devfrontend-react {
+  position: absolute;
+  width: 180px;
+  height: 38.11px;
+  left: 52%;
+  top: 212%;
+  z-index: 1;
+}
+
+.devfrontend-next {
+  position: absolute;
+  width: 180px;
+  height: 38.11px;
+  left: 52%;
+  top: 217%;
+  z-index: 1;
+}
+
+.devmob-reactnative {
+  position: absolute;
+  width: 180px;
+  height: 38.11px;
+  left: 52%;
+  top: 222%;
+  z-index: 1;
+}
+
+.x {
+  position: absolute;
+  width: 3%;
+  height: 50%;
+  margin-top: 92%;
+  left: 20%;
+}
+
+.social {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  margin-top: 102%;
+  left: 24%;
+}
+.social img {
+  padding: 12px 7px;
+  left: 20%;
+}
+
+.clients {
+  position: absolute;
+  width: 307px;
+  height: 22px;
+  left: 20%;
+  top: 245%;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 22px;
+  color: #999999;
+}
+
+.my-clients {
+  position: absolute;
+  width: 58%;
+  height: 50%;
+  margin-top: 115%;
+  left: 26%;
+}
+
+.my-clients img {
+  width: 15%;
+  padding: 12px 7px;
+}
+
+footer {
+  position: absolute;
+  width: 60%;
+  left: 10%;
+  top: 300%;
+}
+
+footer img {
+  position: absolute;
+  width: 120%;
+  left: 8%;
+}
+
+footer p {
+  position: absolute;
+  color: #999999;
+  left: 10%;
+}
+
+@media (max-width: 1047px) {
+  .phrase-design {
+    width: 430px;
+    height: 60%;
+    left: 20%;
+    top: -8%;
+  }
+  .page-main h1 {
+    width: 80%;
+    left: 12%;
+    top: 18%;
+    font-size: 35px;
+  }
+  .page-main h2 {
+    left: 16%;
+    top: 27%;
+    font-size: 160%;
+  }
+  .page-main p {
+    margin-top: 180px;
+  }
+}
+
+@media (max-width: 880px) {
+  .phrase-design {
+    width: 430px;
+    height: 60%;
+    left: 26%;
+    top: -8%;
+  }
+  .page-main h1 {
+    width: 80%;
+    left: 12%;
+    top: 18%;
+    font-size: 35px;
+  }
+  .page-main h2 {
+    left: 16%;
+    top: 27%;
+    font-size: 160%;
+  }
+  .page-main p {
+    margin-top: 110px;
+  }
+
+  .main-illustration {
+    margin-top: 340px;
+  }
+
+  .me {
+    max-width: 60%;
+    top: 122%;
+    font-size: 60px;
+    line-height: 171px;
+    background: linear-gradient(
+      180deg,
+      #ffffff 0%,
+      rgba(255, 255, 255, 0) 66.65%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    opacity: 0.2;
+    margin-top: 16%;
+  }
+
+  .about h1 {
+    top: 153%;
+  }
+  .about h2 {
+    left: 388px;
+    top: 149.3%;
+  }
+
+  .my-name {
+    top: 166%;
+  }
+
+  .my-description {
+    top: 173%;
+  }
+
+  .mej {
+    width: 380px;
+    height: 65%;
+    left: 20%;
+    top: 226%;
+  }
+
+  .devback-node {
+    left: 15%;
+    top: 248%;
+  }
+
+  .devback-nest {
+    left: 15%;
+    top: 253%;
+  }
+
+  .devfrontend-react {
+    left: 15%;
+    top: 258%;
+  }
+
+  .devfrontend-next {
+    left: 15%;
+    top: 263%;
+  }
+
+  .devmob-reactnative {
+    left: 15%;
+    top: 268%;
+  }
+
+  .x {
+    margin-top: 1160px;
+  }
+
+  .social {
+    margin-top: 1296px;
+    left: 25%;
+  }
+
+  .clients {
+    top: 294%;
+  }
+
+  .my-clients {
+    margin-top: 1850px;
+    left: 15%;
+  }
+
+  footer {
+    top: 330%;
+    bottom: auto;
+  }
+
+  footer p {
+    font-size: 18px;
+  }
+
+  .line {
+    width: 115%;
+    height: 1px;
+    background: #999999;
+    margin-top: 5px;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 690px) {
+  .phrase-design {
+    width: 60%;
+    height: 60%;
+    left: 20%;
+    top: -8%;
+  }
+  .page-main h1 {
+    width: 80%;
+    left: 12%;
+    top: 18%;
+    font-size: 35px;
+  }
+  .page-main h2 {
+    left: 16%;
+    top: 27%;
+    font-size: 110%;
+  }
+  .page-main p {
+    width: 60%;
+    height: 80%;
+    left: 20%;
+    margin-top: 20%;
+    font-size: 16px;
+  }
+
+  .main-illustration {
+    width: 70%;
+    margin-left: 90px;
+    margin-top: 290px;
+  }
+
+  .me {
+    max-width: 60%;
+    top: 122%;
+    font-size: 60px;
+    line-height: 171px;
+    background: linear-gradient(
+      180deg,
+      #ffffff 0%,
+      rgba(255, 255, 255, 0) 66.65%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    opacity: 0.2;
+  }
+
+  .about h1 {
+    top: 141%;
+  }
+
+  .about h2 {
+    left: 350px;
+    top: 137.3%;
+  }
+
+  .my-name {
+    top: 155%;
+  }
+
+  .my-description {
+    top: 164%;
+  }
+
+  .mej {
+    width: 380px;
+    height: 65%;
+    left: 20%;
+    top: 220%;
+  }
+
+  .devback-node {
+    left: 15%;
+    top: 248%;
+  }
+
+  .devback-nest {
+    left: 15%;
+    top: 253%;
+  }
+
+  .devfrontend-react {
+    left: 15%;
+    top: 258%;
+  }
+
+  .devfrontend-next {
+    left: 15%;
+    top: 263%;
+  }
+
+  .devmob-reactnative {
+    left: 15%;
+    top: 268%;
+  }
+
+  .x {
+    margin-top: 1075px;
+  }
+
+  .social {
+    margin-top: 1210px;
+    left: 25%;
+  }
+
+  .clients {
+    top: 290%;
+  }
+
+  .my-clients {
+    margin-top: 1800px;
+    left: 15%;
+  }
+
+  footer {
+    top: 330%;
+    bottom: auto;
+  }
+
+  footer p {
+    font-size: 18px;
+  }
+
+  .line {
+    width: 115%;
+    height: 1px;
+    background: #999999;
+    margin-top: 5px;
+  }
+}
